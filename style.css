@@ -8,29 +8,19 @@
 
 body{
     margin: 0%;
-    background-color: #726c6b94;
-
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
-}
+
 
 header { 
-    background-color: rgb(0, 56, 132);
-    padding: 10px 10px 40px 10px;
+    padding-bottom: 800px;  
     
 }
-
-
-
-header  div > img {
-    float: left;
-    margin-right: 20px;
-    max-height: 100px;
-}
-
 
 
 header  div > h1 {
@@ -43,38 +33,22 @@ header  div > h1 {
 
 header  div > h2 {
     margin: 0;
-    text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: normal;
-
-
-}
-
-nav > a {
-    font-size: 1.3em;
-    color: aliceblue;
-    padding-top: 30px;
-    padding: 20px;
-    margin-left: 20px;
-    background-color: rgb(0, 56, 132);
-    border-radius: 5px;
-    text-decoration: none;
+    
 
 }
 
-nav > a:hover {
-    background-color: rgb(2, 69, 163);
-}
+
 
 main {
-    background-color: aliceblue;
+    background-color: rgba(36, 35, 35, 0.801);
     margin: auto;
     min-height: 320px;
-    max-width: 990px;
     padding: 15px;
-    border-radius: 0px 0px 5px 5px;
     box-shadow: 0px 0px 1px #5a120894;
     font-size: 1.3em;
+    border-radius: 10px;
+    color: aliceblue;
     
 }
 
@@ -82,29 +56,26 @@ main > h2, h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-main > h3 {
-    font-size: 1.3em;
-}
-
-main > p {
-    text-indent: 15px;
-    line-height: 2em;
-}
-
 #container {
-    gap: 10px;
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
 }
 
-.imgschool {
-    padding: 5px;     
+#box {
+    min-width: 520px;
 }
 
-main div>img {
-    border-style: solid;
-    border-width: 1px;
+#img-span {
+    padding-top: 50px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;  
+    
+}
 
+ img {
+    border-radius: 20px;
 }
 
