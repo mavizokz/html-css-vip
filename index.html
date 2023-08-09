@@ -6,51 +6,72 @@
     <title>Colégio Vip</title>
     <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <header>
         <div>
             <img src="Imagens/logovip-removebg-preview (1).png" alt="">
         </div>
-    
-        
     </header>
-    <main>
+    <div class="menu">
+        <nav>
         
-        <div class="container">
+            <a href="#">Matrículas</a>
+            <a href="">Contato</a>
+        </nav>
+    </div>
+         
+    <main> 
+        <div class="container-2">
             <article class="box">
-                <h2>Um pouco da nossa história</h2>
-                <p>O Colégio VIP iniciou suas atividades em 1995 para atender a região da zona norte com o firme propósito de ser diferenciado de outras instituições, objetivando, além da qualidade no ensino, comodidades aos pais, como por exemplo, o fornecimento do transporte gratuito e todo material, didático e paradidático, expandindo posteriormente sua área de atuação para o Imirim e a Serra da Cantareira (Bairro do Sausalito). Hoje conta com aproximadamente 2000 alunos. Desde sua fundação, o Colégio VIP mantém sua missão de trabalhar, por meio da educação, valores e princípios, realçando as virtudes e qualidades de seus alunos e incentivando seu senso crítico e criativo, a fim de formar cidadãos éticos, solidários e competentes. Esses conceitos são fruto da filosofia humanística que inspira a Pedagogia VIP.</p>
+                <h2 class="center">Um pouco da nossa história</h2>
+                <p>O Colégio VIP, localizado no Tremembé, iniciou suas atividades em 1995 para atender a região da zona norte com o firme propósito de ser diferenciado de outras instituições.
+                Expandindo posteriormente sua área de atuação para o Imirim e a Serra da Cantareira (Bairro do Sausalito)</p>
+
+
+                <p style="background-color: cornflowerblue; border-radius: 7px; padding: 10px; text-align: center;"> Objetivando, além da qualidade no ensino, comodidades aos pais, como por exemplo, o fornecimento do transporte gratuito e todo material, didático e paradidático. </p>
+
             </article>
+
             <div class="box">
                 <picture>
                     <source media="(max-width: 500px )" srcset="imagens/unidadeimirim.webp" type="image/webp">
                     <source media="(max-width: 1250px )" srcset="imagens/unidadeimirim_mid.webp" type="image/webp">
-                    <img src="Imagens/unidadeimirim_big.webp" alt="unidadeimirim">
+                    <img src="Imagens/unidadeimirim_mid.webp" alt="unidadeimirim">
                 </picture>
             </div>
         </div>
 
+            <section>
+                <h2> Missão </h2>
+                <p>Desde sua fundação, o Colégio VIP mantém sua missão de trabalhar, por meio da educação, valores e princípios, realçando as virtudes e qualidades de seus alunos e incentivando seu senso crítico e criativo, a fim de formar cidadãos éticos, solidários e competentes. Esses conceitos são fruto da filosofia humanística que inspira a Pedagogia VIP.</p>
+                <img src="Imagens/missao4.png" alt="">
+            </section>
+
+
         <hr>
     
         <div class="container">
-            <div class="box-2">
-                <picture>
-                    <img src="Imagens/educaçaoinfantil.webp" alt="">
-                </picture>
-                <picture>
-                    <img src="Imagens/ensinofundamental.webp" alt="">
-                </picture>
-                <picture>
-                    <img src="Imagens/enisnomedio.webp" alt="">
-                </picture>
-            </div>
+            <div class="gallery-wrapper">
+                
+                <button class="arrow-left control" aria-label="Previous Image">⬿</button>
+                <button class="arrow-right control" aria-label="Next Image">⤳</button>
+                
+                <div class="gallery">
 
+                    <img src="Imagens/educaãoinfantibrinadeiras.jpg" alt="Educação Infantil" class="item current-item">
+                    <img src="Imagens/ensinofundamentalbale_resized.jpg" alt="ensino fundamental" class="item">
+                    <img src="Imagens/enisnomedioforaresized.jpg" alt="enisno médio" class="item">
+                    <img src="Imagens/ensinofundamental.webp" alt="" class="item">
+                </div>
+            </div>
+            
         </div>
 
 
     </main>
     
-
+    <script src="arquivo.js"></script>
 </body>
 </html>

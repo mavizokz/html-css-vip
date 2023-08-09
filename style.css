@@ -7,20 +7,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
 
 body{
-    margin: 0%;
+    
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url(https://images.pexels.com/photos/33045/lion-wild-africa-african.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 }
 
 
 
 header { 
-    padding-bottom: 800px;  
+    position: relative;
+    height: 120px;
+    background-color: rgb(107, 107, 187);
+    margin:2%;
+    border-radius: 10px;
+ 
     
 }
 
@@ -35,41 +43,55 @@ header  div > h2 {
     margin: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
+header > div > img {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    left: 20px;
+    bottom: 2px;
+    
+}
+
+.menu{
+    position: relative;
+}
+
+
+ div > nav {
+    position: absolute;
+    bottom: 60px;
+    left:180px;
+   
+}
+
+ div > nav > a  {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px;
+    margin: 17px;
+    background-color: rgb(128, 134, 187);
+    border-radius: 9px;
+ }
 
 
 
 main {
-    background-color: rgba(36, 35, 35, 0.801);
     margin: auto;
     min-height: 320px;
-    padding: 25px;
     box-shadow: 0px 0px 1px #5a120894;
     font-size: 1.3em;
     border-radius: 10px;
-    color: black;
     
     
 }
 
-article > h2, h3 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
-    background-color: rgba(240, 248, 255, 0.63);
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px;
-    margin-bottom: -21px;
+.center {
+    text-align: center;
 }
 
-article > p {
-    font-family: 'Mukta', sans-serif;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.651);
-    background-color: rgba(240, 248, 255, 0.63);
-    border-radius: 0px 0px 10px 10px;
-    padding: 10px;
-}
-
-.container {
-    gap: 50px; 
+.container-2 {
+    gap: 0px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -77,19 +99,121 @@ article > p {
 }
 
 .box {
-    width: 600px;
+    width: 420px;
+    padding: 25px;
 }
 
-picture > img {
-    margin: 25px;
-    margin-top: 80px;
-    padding-right: 30px;
+
+article > h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    padding: 10px;
+    
 }
+
+article > p {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+section {
+    background-color: darkcyan;
+    padding: 20px;
+    border-radius: 14px 0px 14px 0px ;
+    margin: 30px;
+}
+
+section > h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
+    text-align: center;
+}
+
+section > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+}
+ section > img {
+    width: 1000px;
+    
+ }
 
 hr {
     width: 900px;
+
 }
 
-.box-2 {
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-wrapper {
+    overflow-x: hidden;
+
+}
+
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 40px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right {
+    left: auto;
+    right:0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    opacity:2;
     
 }
+
+.item {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+    
+}
+ 
+.current-item {
+    opacity: 1;
+}
+
