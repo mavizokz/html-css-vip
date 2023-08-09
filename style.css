@@ -29,7 +29,7 @@ header {
     background-color: rgb(44, 62, 147);
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 41px;
     border-radius: 0 0 10px 10px;
     align-items: center;
     box-shadow: 0 16px 8px -9px rgba(191, 191, 191, alpha);   
@@ -39,10 +39,10 @@ header {
 
 header > div > img {
     width: 100px;
-    height: 80px;
+    height: 90px;
     position: absolute;
     left: 90px;
-    bottom: 10px;
+    bottom: 5px;
     
 }
 
@@ -54,6 +54,7 @@ header > div > img {
 .nav-bar ul{
     display: flex;
     list-style: none;
+    padding-inline-start: 0;
     
 
 }
@@ -161,7 +162,7 @@ section > p {
  }
 
 .mid {
-    width: 500px;
+    width: 70%;
     height: 1.5px;
     background: #0B2447;
     margin: auto;
@@ -249,7 +250,7 @@ section > p {
     .nav-bar {
         height: 0;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
         right: 0;
         width: 100vw;
@@ -282,10 +283,10 @@ section > p {
 
     header > div > img {
         width: 80px;
-        height: 60px;
+        height: 70px;
         position: absolute;
-        left: 20px;
-        bottom: 25px;
+        left: 13px;
+        bottom:15px;
         
     }
 }
