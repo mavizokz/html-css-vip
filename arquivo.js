@@ -1,3 +1,9 @@
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function() {
+  navbar = document.querySelector(".nav-bar");
+  navbar.classList.toggle("active");
+}
+
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
@@ -33,3 +39,5 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");
   });
 });
+
+

@@ -24,57 +24,68 @@ body{
 
 header { 
     position: relative;
-    height: 120px;
-    background-color: rgb(107, 107, 187);
-    margin:2%;
-    border-radius: 10px;
- 
-    
-}
-
-
-header  div > h1 {
-    margin: 0;
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-header  div > h2 {
-    margin: 0;
-    font-family: 'Yanone Kaffeesatz', sans-serif; 
-}
-header > div > img {
-    width: 120px;
+    width: 100%;
     height: 100px;
+    background-color: rgb(44, 62, 147);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+    box-shadow: 0 16px 8px -9px rgba(191, 191, 191, alpha);   
+}
+
+
+
+header > div > img {
+    width: 100px;
+    height: 80px;
     position: absolute;
-    left: 20px;
-    bottom: 2px;
+    left: 90px;
+    bottom: 10px;
     
 }
 
-.menu{
-    position: relative;
+
+.hamburger {
+    display: none;
 }
 
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    
 
- div > nav {
-    position: absolute;
-    bottom: 60px;
-    left:180px;
-   
 }
 
- div > nav > a  {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.2em;
+.nav-bar ul li a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     text-decoration: none;
-    padding: 10px;
-    margin: 17px;
-    background-color: rgb(128, 134, 187);
-    border-radius: 9px;
- }
+    display: block;
+    color: #0b2447;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 25px;
+    margin: 0 5px;
+    transition: .2s;
+}
 
+.nav-bar ul li a::after{
+    display: block;
+    content:"";
+    border-bottom: 2px solid;
+    transform: scale(0); /* Esconde a barra que fica embaixo dos links */ 
+    transition: 250ms ease-in-out;
+}
 
+.nav-bar ul li a:hover::after {
+    transform: scaleX(1);/* nao esconde a barra que fica embaixo dos links */ 
+}
+
+.nav-bar ul li a:active {
+    color: #19376d; /*quando ativado fara essa cor*/
+
+}
 
 main {
     margin: auto;
@@ -122,10 +133,11 @@ article > p {
 }
 
 section {
-    background-color: darkcyan;
+    background-color: #0E1847;
     padding: 20px;
     border-radius: 14px 0px 14px 0px ;
     margin: 30px;
+    color: white;
 }
 
 section > h2 {
@@ -148,8 +160,12 @@ section > p {
     
  }
 
-hr {
-    width: 900px;
+.mid {
+    width: 500px;
+    height: 1.5px;
+    background: #0B2447;
+    margin: auto;
+    margin-bottom: 20px;
 
 }
 
@@ -206,7 +222,7 @@ hr {
 
 .item {
     width: 300px;
-    height: 300px;
+    height: 400px;
     flex-shrink: 0;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
@@ -217,3 +233,59 @@ hr {
     opacity: 1;
 }
 
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #0B2447;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: white;
+        box-shadow: 0 16px 8px -9px rgba(191, 191, 191, 1);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 200px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 60px auto 0;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    header > div > img {
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        left: 20px;
+        bottom: 25px;
+        
+    }
+}
