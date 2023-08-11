@@ -110,10 +110,13 @@ main {
     
 }
 
+
+
 .box {
-    width: 420px;
+    width: 536px;
     padding: 25px;
 }
+
 
 
 article > h2 {
@@ -136,7 +139,7 @@ article > p {
 section {
     background-color: #0E1847;
     padding: 20px;
-    border-radius: 14px 0px 14px 0px ;
+    border-radius: 40px 0px 40px 0px ;
     margin: 30px;
     color: white;
 }
@@ -234,6 +237,50 @@ section > p {
     opacity: 1;
 }
 
+.container-2-convic {
+    gap: 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.content {
+    background-color: antiquewhite;
+    color: #0B2447;
+    font-family: 'Noto Sans', sans-serif;
+    width: 200px;
+    height: auto;
+    font-size: 0.7em;
+    border-radius: 5px;
+    padding: 13px;
+    box-shadow: 1px 1px 2px black;
+
+}
+
+.footer {
+    background-color: rgb(44, 62, 147);
+    color: rgb(216, 216, 216);
+
+}
+
+.footer > h5 {
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.footer > ul > li {
+    list-style: none;
+    padding: 5px;
+    
+}
+
+.footer > ul > li > a {
+    font-weight: bold;
+    color: rgb(74, 104, 255);
+}
+
 @media only screen and (max-width: 900px){
     .hamburger{
         display: block;
@@ -281,6 +328,11 @@ section > p {
         margin-bottom: 12px;
     }
 
+    .gallery-wrapper {
+        overflow-x: scroll;
+    
+    }
+    
     header > div > img {
         width: 80px;
         height: 70px;
