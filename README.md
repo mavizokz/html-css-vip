@@ -1,2 +1,2 @@
 # html-css-vip
- Projeto para o colegio vip
+ Projeto de site para o colégio vip.
