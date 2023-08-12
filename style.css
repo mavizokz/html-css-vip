@@ -235,7 +235,9 @@ section > p {
  
 .current-item {
     opacity: 1;
+    transform: translate(-5px, -8px);
 }
+
 
 .container-2-convic {
     gap: 50px; 
@@ -261,14 +263,24 @@ section > p {
 
 .footer {
     background-color: rgb(44, 62, 147);
-    color: rgb(216, 216, 216);
-
+    color: rgb(216, 216, 216); 
+    
+    
 }
 
 .footer > h5 {
     font-size: 1.4em;
     padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
 }
+
+.footer > ul {
+    width: 70%;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+
 
 .footer > ul > li {
     list-style: none;
@@ -280,6 +292,8 @@ section > p {
     font-weight: bold;
     color: rgb(74, 104, 255);
 }
+
+
 
 @media only screen and (max-width: 900px){
     .hamburger{
@@ -333,6 +347,28 @@ section > p {
     
     }
     
+    .item {
+        width: 300px;
+        height: 400px;
+        flex-shrink: 0;
+        opacity: 1;
+        transition: all 600ms ease-in-out;
+        
+    }
+
+    .current-item {
+        opacity: 1;
+        transform: none;
+    }
+
+
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+
+
+
     header > div > img {
         width: 80px;
         height: 70px;
