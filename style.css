@@ -63,7 +63,7 @@ header > div > img {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-decoration: none;
     display: block;
-    color: #0b2447;
+    color: #092041;
     font-size: 1.5em;
     font-weight: 400;
     padding: 10px 25px;
@@ -138,7 +138,7 @@ article > p {
 }
 
 section {
-    background-color: #2C3E93;
+    background-color: rgb(44, 62, 147);
     padding: 20px;
     border-radius: 40px 0px 40px 0px ;
     margin: 30px;
@@ -183,7 +183,7 @@ section > p {
 .container {
     position: relative;
     padding: 15px;
-    max-width: 1279px;
+    max-width: 70%;
     margin: 0 auto;
    
 }
@@ -234,7 +234,7 @@ section > p {
 }
 
 .item {
-    width: 300px;
+    width: 314px;
     flex-shrink: 0;
     opacity: 1;
     height: 470px;
@@ -252,15 +252,14 @@ section > p {
 
 .current-item img {
     border-radius: 10px 10px 0px 0px;
-    width: 300px;
+    width: 314px;
     height: 220px;
 }
 
 .descrition {
-    position: absolute;
-    background-color: aliceblue;
+    position: absolute; 
     padding: 20px;
-    background-color: #028090;
+    background-color: #7A9E9F;
     height:250px ;
     margin-top: -6px;
      
@@ -287,25 +286,34 @@ section > p {
 }
 
 .button {
-    background-color: #4C1C00;
+    background-color: white;
     border-radius: 10px;
     margin: 15px;
     padding: 7px;
-    border: none;
+    border: solid;
+    border-width: 0.5px;
+    border-color: #092041;
     
 }
 
 .button a {
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
-    color: white;
+    color: #092041;
     font-size: medium;
+    font-weight: bold;
+}
+
+.button a:hover{
+    color: white;
+    
 }
 
 .button:hover {
-    background-color: red;
-
+    background-color: #092041;
+  
 }
+
 
 .section_2 {
     margin-top: 20px;
@@ -321,15 +329,18 @@ section > p {
 }
 
 .content {
-    background-color: antiquewhite;
-    color: #0B2447;
-    font-family: 'Noto Sans', sans-serif;
-    width: 200px;
+    background-color: #7A9E9F;
+    color: rgb(255, 255, 255);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 230px;
     height: auto;
-    font-size: 0.7em;
     border-radius: 5px;
     padding: 13px;
-    box-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px black;
+    font-style: normal;
 
 }
 
