@@ -425,6 +425,14 @@ section > p {
         margin-bottom: 12px;
     }
 
+    .container {
+        position: relative;
+        padding: 15px;
+        max-width: 99%;
+        margin: 0 auto;
+       
+    }
+
     .gallery-wrapper {
         overflow-x: scroll;
     
