@@ -108,11 +108,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 30px;
     
 }
 
 .box {
-    width: 536px;
+    width: 63%;
     padding: 25px;
 }
 
@@ -130,9 +131,16 @@ article > p {
     font-family: 'Noto Sans', sans-serif;
     color: rgb(0, 0, 0);
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 500;
     line-height: 1.8em;
+}
+
+.item-1 {
+    width: 300px;
+    padding: 0;
+    padding-top: 30px;
+    
 }
 /*FIM DA IMAGEM E TEXTO DO INICIO */
 
@@ -140,9 +148,9 @@ article > p {
 section {
     background-color: rgb(44, 62, 147);
     padding: 20px;
-    border-radius: 40px 0px 40px 0px ;
-    margin: 30px;
+    border-radius: 40px 0px 40px 0px ; 
     margin: auto;
+    margin-top: 2%;
     color: white;
     width: 70%;
     margin-bottom: 20px;
@@ -153,11 +161,12 @@ section > h2 {
     font-weight: normal;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
     text-align: center;
+    padding-bottom: 7px;
 }
 
 section > p {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 500;
     margin: auto;
     text-align: center;
@@ -179,6 +188,7 @@ section > p {
     background: #0B2447;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 2%;
     /*RESPONSAVEL PELA LINHA HORIZONTAL */
 }
 
@@ -190,6 +200,7 @@ section > p {
     padding: 15px;
     max-width: 70%;
     margin: 0 auto;
+    margin-top: 2%;
    
 }
 
@@ -323,34 +334,7 @@ section > p {
 
 
 /*INICIO DAS CONVICÇOES */
-.section_2 {
-    margin-top: 20px;
-}
 
-.container-2-convic {
-    gap: 50px; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-
-}
-
-.content {
-    background-color: #7A9E9F;
-    color: rgb(255, 255, 255);
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    width: 230px;
-    height: auto;
-    border-radius: 5px;
-    padding: 13px;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 100;
-    text-shadow: 1px 1px 1px black;
-    font-style: normal;
-
-}
 /*FIM DAS CONVICÇOES*/
 
 
@@ -465,7 +449,7 @@ section > p {
         width: 80px;
         height: 70px;
         position: absolute;
-        left: 13px;
+        left: 30px;
         bottom:15px;
         
     }
