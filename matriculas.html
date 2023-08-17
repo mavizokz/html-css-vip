@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas Colégio Vip</title>
+    <link rel="stylesheet" href="style/matriculas.css">
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagens/71206468_254623625480937_2707584126843617280_n.jpg" alt="">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="container">
+        <article class="box">
+            <h2>Informaões de contato</h2>
+            <p class="telefone">(11) 2953-5001</p>
+            <p class="gmail">matriculas@colegiovip.com.br</p>
+        </article>
+        
+        <form action="#" method="post" autocomplete="off" class="box">
+            <fieldset>
+                <ul>
+                    <h2>Formulário</h2>
+                    <li>
+                        <label for="nomedoresponsavel">Nome do responsável</label>
+                        <input type="text" name="nomedoresponsavel" placeholder="Nome do responsável">
+                    </li>
+                    
+                    <li>
+                        <label for="nomedofilho">Nome do filho(a)</label>
+                        <input type="text" name="nomedofilho">
+                    </li>
+                    
+                    <li>
+                        <label for="datadenascimento">Data de Nascimento do filho(a)</label>
+                        <input type="date" name="datadenascimento">
+                    </li>
+                    
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </li>
+                    
+                    <li>
+                        <label for="celular">Celular para contato</label>
+                        <input type="number" name="celular">
+                    </li>
+                    
+                    <li>
+                        <label for="serie">Série de interesse</label>
+                        <input type="text" name="serie" class="small">
+                    </li>
+
+                    <h2>Assinale a Unidade de interesse</h2>
+                   
+                    <li>
+                        <input type="checkbox" name="unidade">
+                        <label for="unidade">Unidade Imirim</label>                        
+                    </li> 
+                    <li>  
+                        <input type="checkbox" name="unidade">
+                        <label for="unidade">Unidade Tremembé</label>
+                    </li> 
+                    <li>
+                        <input type="checkbox" name="unidade">
+                        <label for="unidade">Unidade Serra</label>
+                    </li>
+                </ul>
+                
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+    </main>
+    <script src="arquivo.js"></script>
+</body>
+</html>

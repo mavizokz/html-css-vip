@@ -20,7 +20,7 @@ body{
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
-
+/*INICIO DAS CONFIS DO HEADER */
 
 header { 
     position: relative;
@@ -87,21 +87,22 @@ header > div > img {
     color: #19376d; /*quando ativado fara essa cor*/
 
 }
+/* FIM DAS CONFIS DO HEADER */
+
+
 
 main {
     margin: auto;
     min-height: 320px;
     box-shadow: 0px 0px 1px #5a120894;
     font-size: 1.3em;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
     
 }
 
-.center {
-    text-align: center;
-}
 
+
+/*TEXTO E IMAGEM DO COMEÇO */
 .container-2 {
     gap: 0px; 
     display: flex;
@@ -110,14 +111,10 @@ main {
     
 }
 
-
-
 .box {
     width: 536px;
     padding: 25px;
 }
-
-
 
 article > h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -125,6 +122,7 @@ article > h2 {
     color: rgb(0, 0, 0);
     font-weight: normal;
     padding: 10px;
+    text-align: center;
     
 }
 
@@ -136,7 +134,9 @@ article > p {
     font-weight: 500;
     line-height: 1.8em;
 }
+/*FIM DA IMAGEM E TEXTO DO INICIO */
 
+/*COMEÇO DA MISSAO*/
 section {
     background-color: rgb(44, 62, 147);
     padding: 20px;
@@ -169,6 +169,9 @@ section > p {
     width: 1000px;
     
  }
+/*FIM DA MISSAO */
+
+
 
 .mid {
     width: 70%;
@@ -176,10 +179,12 @@ section > p {
     background: #0B2447;
     margin: auto;
     margin-bottom: 20px;
-
+    /*RESPONSAVEL PELA LINHA HORIZONTAL */
 }
 
 
+
+/*INICIO DA GALERIA*/
 .container {
     position: relative;
     padding: 15px;
@@ -313,8 +318,11 @@ section > p {
     background-color: #092041;
   
 }
+/*FIM DA GALERIA */
 
 
+
+/*INICIO DAS CONVICÇOES */
 .section_2 {
     margin-top: 20px;
 }
@@ -343,7 +351,11 @@ section > p {
     font-style: normal;
 
 }
+/*FIM DAS CONVICÇOES*/
 
+
+
+/*INICIO DO RODAPE */
 .footer {
     background-color: rgb(44, 62, 147);
     color: rgb(216, 216, 216); 
@@ -375,8 +387,7 @@ section > p {
     font-weight: bold;
     color: rgb(74, 104, 255);
 }
-
-
+/*FIM DO RODAPE */
 
 @media only screen and (max-width: 900px){
     .hamburger{
