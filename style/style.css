@@ -94,9 +94,7 @@ header > div > img {
 main {
     margin: auto;
     min-height: 320px;
-    box-shadow: 0px 0px 1px #5a120894;
-    font-size: 1.3em;
-    border-radius: 10px;    
+    font-size: 1.3em;     
     
 }
 
@@ -113,7 +111,7 @@ main {
 }
 
 .box {
-    width: 63%;
+    width: 700px;
     padding: 25px;
 }
 
@@ -152,7 +150,7 @@ section {
     margin: auto;
     margin-top: 2%;
     color: white;
-    width: 70%;
+    width: 75%;
     margin-bottom: 20px;
 }
 
@@ -340,37 +338,58 @@ section > p {
 
 
 /*INICIO DO RODAPE */
-.footer {
+footer {
     background-color: rgb(44, 62, 147);
-    color: rgb(216, 216, 216); 
-    
-    
+    color: rgb(216, 216, 216);   
+    margin-top: 50px;
 }
 
-.footer > h5 {
+.containerFooter {
+    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+} 
+
+.layout {
+    width: 600px;
+    padding: 25px;
+   
+}
+
+.imgFooter {
+    width: 300px;
+    padding-right: 0px;
+    padding-top: 30px; 
+}
+
+.layout > h5 {
     font-size: 1.4em;
-    padding: 10px;
+    padding: 5px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
 }
 
-.footer > ul {
-    width: 70%;
+.layout > ul { 
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
+    padding: 0%;
 }
 
 
-.footer > ul > li {
+.layout > ul > li {
     list-style: none;
     padding: 5px;
     
 }
 
-.footer > ul > li > a {
+.layout > ul > li > a {
     font-weight: bold;
     color: rgb(74, 104, 255);
 }
+
+
 /*FIM DO RODAPE */
 
 @media only screen and (max-width: 900px){

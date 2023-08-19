@@ -30,7 +30,7 @@ header {
 
 
 
-header > div > img {
+header > div > a > img {
     width: 100px;
     height: 90px;
     position: absolute;
