@@ -64,7 +64,7 @@ header > div > img {
     text-decoration: none;
     display: block;
     color: #092041;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 400;
     padding: 10px 25px;
     margin: 0 5px;
@@ -106,7 +106,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 10px;
     
 }
 
@@ -248,7 +248,7 @@ section > p {
 }
 
 .item {
-    width: 314px;
+    width: 300px;
     flex-shrink: 0;
     opacity: 1;
     height: 470px;
@@ -266,16 +266,17 @@ section > p {
 
 .current-item img {
     border-radius: 10px 10px 0px 0px;
-    width: 314px;
+    width: 300px;
     height: 220px;
 }
 
 .descrition {
     position: absolute; 
     padding: 20px;
-    background-color: #7A9E9F;
+    background-color:rgb(9, 32, 65);
     height:250px ;
     margin-top: -6px;
+    color: white;
      
 }
 
@@ -284,6 +285,7 @@ section > p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
     padding-bottom: 5px;
+    
 
 }
 
@@ -324,16 +326,11 @@ section > p {
 }
 
 .button:hover {
-    background-color: #092041;
+    background-color: #103569;
   
 }
 /*FIM DA GALERIA */
 
-
-
-/*INICIO DAS CONVICÇOES */
-
-/*FIM DAS CONVICÇOES*/
 
 
 
@@ -353,7 +350,7 @@ footer {
 } 
 
 .layout {
-    width: 600px;
+    width: 1156px;
     padding: 25px;
    
 }
@@ -362,6 +359,7 @@ footer {
     width: 300px;
     padding-right: 0px;
     padding-top: 30px; 
+
 }
 
 .layout > h5 {
@@ -373,7 +371,7 @@ footer {
 
 .layout > ul { 
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0%;
 }
 
@@ -386,7 +384,7 @@ footer {
 
 .layout > ul > li > a {
     font-weight: bold;
-    color: rgb(74, 104, 255);
+    color: rgb(9, 32, 65);
 }
 
 
@@ -471,5 +469,14 @@ footer {
         left: 30px;
         bottom:15px;
         
+    }
+}
+
+
+@media only screen and (min-width: 1840px){
+    
+    .arrow-left,
+    .arrow-right {
+        display: none;
     }
 }
