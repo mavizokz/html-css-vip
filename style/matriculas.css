@@ -16,7 +16,7 @@
 
 
 header { 
-    position: relative;
+    position:relative;
     width: 100%;
     height: 100px;
     background-color: rgb(44, 62, 147);
@@ -25,7 +25,8 @@ header {
     padding: 0 41px;
     border-radius: 0 0 10px 10px;
     align-items: center;
-    box-shadow: 0 16px 8px -9px rgba(191, 191, 191, alpha);   
+    box-shadow: 0 16px 8px -9px rgba(191, 191, 191, alpha);
+    
 }
 
 
@@ -81,25 +82,44 @@ header > div > a > img {
 
 }
 
+/*fim do nav*/
+
+main {
+    margin: auto;
+}
+
+.carrosel {
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 .container {
-    gap: 0px; 
+    gap: 7px; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .box {
-    width:600px;
-    padding: 25px;
+    width: 480px;
+    margin-top: 40px;
+}
+.box-2 {
+    text-align: center;
+   
 }
 
+
 h2 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.7em;    
 }
 
 article p {
     font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
 }
 
 .telefone::before{
@@ -110,50 +130,156 @@ article p {
     content: '📧';
 }
 
+.button-job {
+    margin: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 40%;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+/*inicio do formulario*/
+.title-form {
+ color: black;
+ text-align: center;
+ font-size: 1.7em;
+ margin-bottom: 20px;
+}
 
 fieldset {
     border: none; 
-     
+}
+.login-box > form > fieldset > ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
 }
 
-
-::placeholder {
+.login-box {
+    padding: 20px;
+    background-color: transparent;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid;
     font-family: 'Noto Sans', sans-serif;
+
 }
 
-fieldset > ul {
-    background-color: aliceblue;
-    border: 1px solid rgb(215, 249, 250) ;
+fieldset ul h2 {
+    padding: 10px;
+    color: black;
+    padding-left: 0;
+    font-size: 1.7em;
+}
+
+fieldset label {
+    color: rgb(0, 0, 0);
+}
+
+
+.login-box .user-box input {   
+    font-size: 1.0em;/*esta mexendo apenas a data de aniversario*/
+    padding: 10px 0;
+    color: white;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1.2px solid rgb(0, 0, 0);
+    outline: none;
+    background: transparent; 
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(117, 117, 117);
+    pointer-events: none;
+    display: none;
+    
+}
+
+.login-box .user-box input::placeholder{
+    color: rgb(175, 174, 174);
+    font-size: 1.1em;
+
+}
+
+.submit {
+    width: 20%;
+    height: 30%;
+    margin-top: 10px;
+    font-size: 1em;
+    font-family:'Noto Sans', sans-serif ;
+    border-radius: 30px;
+
+}
+
+.submit:hover {
+    font-weight: bold;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+/*INICIO DO RODAPE */
+footer {
+    background-color: rgb(44, 62, 147);
+    color: rgb(216, 216, 216);   
+    margin-top: 50px;
+}
+
+.containerFooter {
+    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+} 
+
+.layout {
+    width: 1156px;
+    padding: 25px;
+   
+}
+
+.imgFooter {
+    width: 300px;
+    padding-right: 0px;
+    padding-top: 30px; 
+
+}
+
+.layout > h5 {
+    font-size: 1.4em;
+    padding: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+}
+
+.layout > ul { 
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    padding: 0%;
+}
+
+
+.layout > ul > li {
     list-style: none;
-    padding: 15px; 
+    padding: 5px;
     
 }
 
-fieldset > ul li {
-    margin:10px;
-    font-size: 1.2em;
-    font-family: 'Noto Sans', sans-serif;
-
+.layout > ul > li > a {
+    font-weight: bold;
+    color: rgb(9, 32, 65);
 }
 
-fieldset > label{  
-    text-align: right;
-    width: 150px;
-    vertical-align: top;
-    
-}
-
-input {   
-    font-size: 1.0em;
-}
-
-fieldset > input, select, button {
-    font-size: 100%;
-}
-
-.small {
-    width: 75px;
-}
 
 
 @media only screen and (max-width: 900px){
@@ -203,12 +329,14 @@ fieldset > input, select, button {
         margin-bottom: 12px;
     }
 
-    header > div > img {
+    header > div > a > img {
         width: 80px;
         height: 70px;
         position: absolute;
-        left: 13px;
+        left: 30px;
         bottom:15px;
         
     }
+
+   
 }

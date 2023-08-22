@@ -25,68 +25,92 @@
             </ul>
         </nav>
     </header> 
-    <main class="container">
-        <article class="box">
+    <div class="carrosel">
+        <img src="Imagens/promo.webp" alt="">
+    </div>
+    <main class="container">    
+        <div class="login-box box ">
+            
+            <form action="#" method="post" autocomplete="on" >
+                <h2 class="title-form">Formulári de contato</h2>
+                <fieldset>
+                    <ul>
+                        <li class="user-box">
+                            <label for="nomedoresponsavel">Nome do responsável</label>
+                            <input type="text" name="nomedoresponsavel" placeholder="Nome do responsável">
+                                                   
+                        </li>
+            
+                        <li class="user-box">                       
+                            <input type="text" name="nomedofilho" placeholder="Nome do filho(a)">
+                            <label for="nomedofilho">Nome do filho(a)</label>                                       
+                        </li>
+            
+                        <li class="user-box">
+                            <input type="email" name="email" placeholder="Email">
+                            <label for="email">Email</label>                            
+                        </li>
+            
+                        <li class="user-box">
+                            <input type="text" name="celular" placeholder="Celular para contato">
+                            <label for="celular">Celular para contato</label>                             
+                        </li>
+            
+                        <li class="user-box">
+                            <input type="text" name="serie" class="small" placeholder="Série de interesse"> 
+                            <label for="serie">Série de interesse</label>                        
+                        </li>
+                        
+                        <h2>Assinale a Unidade de interesse</h2>
+            
+                        <li>
+                            <input type="checkbox" name="unidade">
+                            <label for="unidade">Unidade Imirim</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="unidade">
+                            <label for="unidade">Unidade Tremembé</label>
+                        </li>
+                       
+                        <li>
+                            <input type="checkbox" name="unidade">
+                            <label for="unidade">Unidade Serra</label>
+                        </li>
+                    
+                        <li>
+                            <input class="submit" type="submit" value="Enviar">
+                        </li>
+                    
+                    </ul>
+            
+                    
+                </fieldset>
+            </form>
+        </div>
+        <article class="box box-2">
             <h2>Informaões de contato</h2>
-            <p class="telefone">(11) 2953-5001</p>
-            <p class="gmail">matriculas@colegiovip.com.br</p>
+            <p class="telefone">Unidade Tremembé:(11) 2953-5001</p>
+            <p class="telefone">Unidade Imirim:(11) 3851-5210</p>
+            <p class="telefone">Unidade Serra:(11) 4485-4333</p>
+            <p class="gmail"><a href="mailto:matriculas@colegiovip.com.br">matriculas@colegiovip.com.br</a></p>
+            <button class="button-job">Trabalhe conosco!</button>
         </article>
-        
-        <form action="#" method="post" autocomplete="off" class="box">
-            <fieldset>
-                <ul>
-                    <h2>Formulário</h2>
-                    <li>
-                        <label for="nomedoresponsavel">Nome do responsável</label>
-                        <input type="text" name="nomedoresponsavel" placeholder="Nome do responsável">
-                    </li>
-                    
-                    <li>
-                        <label for="nomedofilho">Nome do filho(a)</label>
-                        <input type="text" name="nomedofilho">
-                    </li>
-                    
-                    <li>
-                        <label for="datadenascimento">Data de Nascimento do filho(a)</label>
-                        <input type="date" name="datadenascimento">
-                    </li>
-                    
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" name="email">
-                    </li>
-                    
-                    <li>
-                        <label for="celular">Celular para contato</label>
-                        <input type="number" name="celular">
-                    </li>
-                    
-                    <li>
-                        <label for="serie">Série de interesse</label>
-                        <input type="text" name="serie" class="small">
-                    </li>
-
-                    <h2>Assinale a Unidade de interesse</h2>
-                   
-                    <li>
-                        <input type="checkbox" name="unidade">
-                        <label for="unidade">Unidade Imirim</label>                        
-                    </li> 
-                    <li>  
-                        <input type="checkbox" name="unidade">
-                        <label for="unidade">Unidade Tremembé</label>
-                    </li> 
-                    <li>
-                        <input type="checkbox" name="unidade">
-                        <label for="unidade">Unidade Serra</label>
-                    </li>
-                </ul>
-                
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
-
     </main>
+    <footer>
+        <div class="containerFooter">
+            <div class="layout">
+                <h5>Nossa unidades</h6>
+                <ul>
+                    <li>Unidade Tremembé: <a href="https://goo.gl/maps/d3bDTsjhT7w7YsGH9" target="_blank">Av. Cel. Sezefredo Fagundes 2805, São Paulo - SP, 02306-003</a></li>
+                    <li>Unidade Imirim: <a href="https://goo.gl/maps/diqG4REJN3yTTjFj9" target="_blank"> Av. Imirim, 3830 - Vila Pita, São Paulo - SP, 2464-600</a></li>
+                    <li>Unidade Serra: <a href="https://goo.gl/maps/Y3NPtzd6cNDhFdYb6" target="_blank">Av. Dr. Arthur de Andrade Filho, 1200 - Sausalito, Mairiporã - SP, 07000-600</a></li>
+                </ul>
+            </div>
+            <div class="layout imgFooter">
+                <img src="Imagens/logovip-removebg-preview.png" alt="" style="width: 200px; height: 150px;">
+            </div>
+        </div>
+    </footer>
     <script src="arquivo.js"></script>
 </body>
 </html>
