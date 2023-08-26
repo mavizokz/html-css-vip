@@ -98,7 +98,7 @@ main {
 
 .carrosel img {
     text-align: center;
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -123,12 +123,15 @@ main {
 
 h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.7em;    
+    font-size: 1.7em;
+        
 }
 
 article p {
     font-family: 'Noto Sans', sans-serif;
     padding: 10px;
+    font-size: 1.05em;
+    font-weight: 500;
 }
 
 .telefone::before{
@@ -158,6 +161,7 @@ article p {
 fieldset {
     border: none; 
 }
+
 .login-box > form > fieldset > ul{
     list-style-type: none;
     padding-left: 0;
@@ -166,10 +170,10 @@ fieldset {
 
 .login-box {
     padding: 20px;
-    background-color:rgb(56, 78, 150);
+    background-color:rgb(66, 90, 170);
     box-sizing: border-box;
     box-shadow: 1px 1px 2px rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 30px;
     
     font-family: 'Noto Sans', sans-serif;
 }
@@ -181,15 +185,13 @@ fieldset ul h2 {
     font-size: 1.7em;
 }
 
-fieldset label {
-    color: rgb(0, 0, 0);
-}
+
 
 
 .login-box .user-box input {   
-    font-size: 1.0em;/*esta mexendo apenas a data de aniversario*/
+    font-size: 1.0em;
     padding: 10px 0;
-    color: rgb(0, 0, 0);
+    color: rgb(39, 38, 38);
     margin-bottom: 40px;
     border: none;
     border-bottom: 1.2px solid rgb(0, 0, 0);
@@ -203,29 +205,40 @@ fieldset label {
 
 .login-box .user-box label {
     position: absolute;
-    top: -40%;
-    left: 0;
+    top: -35%;
+    left: 109px;
     padding: 10px 0;
     font-size: 16px;
-    color: rgb(117, 117, 117);
+    color: rgb(39, 38, 38);
     pointer-events: none;
-    display: none;
+    font-size: 0.83em;  
     
 }
 
+.user-box {
+    margin-top: 1em;
+}
+
+.user-box label::after {
+    content: '*';
+    color: rgb(148, 31, 31);
+}
+
 .login-box .user-box input::placeholder{
-    color: rgb(175, 174, 174);
-    font-size: 1.1em;
+    color: rgba(187, 187, 187, 0.486);
+    font-size: 1.0em;
+    
 
 }
 
 .submit {
-    width: 20%;
+    padding: 3px;
+    width: 40%;
     height: 30%;
-    margin-top: 10px;
+    margin-top: 25px;
     font-size: 1em;
     font-family:'Noto Sans', sans-serif ;
-    border-radius: 30px;
+    border-radius: 15px;
 
 }
 
@@ -237,6 +250,7 @@ fieldset label {
 
 .fixed {
     position: relative;
+    
 }
 
 .fixed .triangle {
@@ -244,11 +258,12 @@ fieldset label {
     height: 0;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-bottom: 70px solid rgb(56, 78, 150);
+    border-bottom: 70px solid rgb(66, 90, 170);
     rotate: 90deg;
     position: absolute;
     right: -70px;
     top: -600px;
+    
    
 }
 
@@ -376,7 +391,7 @@ footer {
         height: 0;
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
-        border-bottom: 70px solid rgb(56, 78, 150);
+        border-bottom: 70px solid rgb(66, 90, 170);
         rotate: 180deg;
         position: absolute;
         right:290px;
