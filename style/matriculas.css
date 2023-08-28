@@ -99,6 +99,7 @@ main {
 .carrosel img {
     text-align: center;
     width: 70%;
+    display: none;
 }
 
 
@@ -146,8 +147,13 @@ article p {
     margin: 10px;
     font-family: 'Noto Sans', sans-serif;
     width: 40%;
-    border-radius: 30px;
+    border-radius: 15px;
     font-size: 1em;
+}
+
+.button-job:hover{
+    font-weight: bold;
+    border-width: 2px;
 }
 
 /*inicio do formulario*/
@@ -192,11 +198,12 @@ fieldset ul h2 {
     font-size: 1.0em;
     padding: 10px 0;
     color: rgb(39, 38, 38);
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     border: none;
     border-bottom: 1.2px solid rgb(0, 0, 0);
     outline: none;
-    background: transparent; 
+    background: transparent;
+    width: 80%; 
 }
 
 .login-box .user-box {
@@ -206,7 +213,7 @@ fieldset ul h2 {
 .login-box .user-box label {
     position: absolute;
     top: -35%;
-    left: 109px;
+    left: 40px;
     padding: 10px 0;
     font-size: 16px;
     color: rgb(39, 38, 38);
@@ -234,7 +241,6 @@ fieldset ul h2 {
 .submit {
     padding: 3px;
     width: 40%;
-    height: 30%;
     margin-top: 25px;
     font-size: 1em;
     font-family:'Noto Sans', sans-serif ;
@@ -245,7 +251,7 @@ fieldset ul h2 {
 .submit:hover {
     font-weight: bold;
     border-width: 2px;
-    border-radius: 30px;
+    
 }
 
 .fixed {
@@ -394,10 +400,29 @@ footer {
         border-bottom: 70px solid rgb(66, 90, 170);
         rotate: 180deg;
         position: absolute;
-        right:290px;
-        top: 20px;
+        right:285px;
+        top: 3px;
         margin-left: 20px;
     } 
 
 }
 
+@media only screen and (max-width: 410px) {
+    .fixed {
+        position: relative;
+    }
+    
+    .fixed .triangle {
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-bottom: 70px solid rgb(66, 90, 170);
+        rotate: 180deg;
+        position: absolute;
+        right:285px;
+        top: 3px;
+        margin-left: 20px;
+        display: none;
+    } 
+}
