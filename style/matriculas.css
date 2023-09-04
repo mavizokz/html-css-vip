@@ -11,8 +11,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0%;
-    
+    margin: 0%;  
 }
 
 
@@ -191,19 +190,30 @@ fieldset ul h2 {
     font-size: 1.7em;
 }
 
+textarea {
+    font-size: 1.0em;
+    font-family: 'Noto Sans', sans-serif; 
+    outline: none;
+    background:rgba(95, 106, 138, 0.473) ;
+    
+   
+}
 
-
+textarea::placeholder{
+    color: rgba(187, 187, 187, 0.486);
+}
 
 .login-box .user-box input {   
     font-size: 1.0em;
     padding: 10px 0;
     color: rgb(39, 38, 38);
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     border: none;
     border-bottom: 1.2px solid rgb(0, 0, 0);
     outline: none;
     background: transparent;
     width: 80%; 
+    font-weight: 500;
 }
 
 .login-box .user-box {
@@ -215,10 +225,10 @@ fieldset ul h2 {
     top: -35%;
     left: 40px;
     padding: 10px 0;
-    font-size: 16px;
     color: rgb(39, 38, 38);
     pointer-events: none;
-    font-size: 0.83em;  
+    font-size: 0.90em; 
+    font-weight: 600; 
     
 }
 

@@ -37,7 +37,7 @@ header {
 
 
 
-header > div > img {
+header > div > a > img  {
     width: 100px;
     height: 90px;
     position: absolute;
@@ -91,6 +91,7 @@ header > div > img {
 
 
 
+
 main {
     margin: auto;
     min-height: 320px;
@@ -100,241 +101,7 @@ main {
 
 
 
-/*TEXTO E IMAGEM DO COMEÇO */
-.container-2 {
-    gap: 0px; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
-    
-}
-
-.box {
-    width: 700px;
-    padding: 25px;
-}
-
-article > h2 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
-    color: rgb(0, 0, 0);
-    font-weight: normal;
-    padding: 10px;
-    text-align: center;
-    
-}
-
-article > p {
-    font-family: 'Noto Sans', sans-serif;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    font-size: 0.8em;
-    font-weight: 500;
-    line-height: 1.8em;
-}
-
-.item-1 {
-    width: 300px;
-    padding: 0;
-    padding-top: 30px;
-    
-}
-/*FIM DA IMAGEM E TEXTO DO INICIO */
-
-/*COMEÇO DA MISSAO*/
-section {
-    background-color: rgb(44, 62, 147);
-    padding: 20px;
-    border-radius: 40px 0px 40px 0px ; 
-    margin: auto;
-    margin-top: 2%;
-    color: white;
-    width: 75%;
-    margin-bottom: 20px;
-}
-
-section > h2 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: normal;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.651);
-    text-align: center;
-    padding-bottom: 7px;
-}
-
-section > p {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.8em;
-    font-weight: 500;
-    margin: auto;
-    text-align: center;
-    max-width: 900px;
-    line-height: 1.8em;
-    
-}
- section > img {
-    width: 1000px;
-    
- }
-/*FIM DA MISSAO */
-
-
-
-.mid {
-    width: 70%;
-    height: 1.5px;
-    background: #0B2447;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 2%;
-    /*RESPONSAVEL PELA LINHA HORIZONTAL */
-}
-
-
-
-/*INICIO DA GALERIA*/
-.container {
-    position: relative;
-    padding: 15px;
-    max-width: 70%;
-    margin: 0 auto;
-    margin-top: 2%;
-   
-}
-
-.gallery-wrapper {
-    overflow-x: hidden;
-}
-
-
-.gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
-    
-}
-
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 40px;
-    line-height: 250px;
-    width: 40px;
-    text-align: center;
-    color: rgb(46, 46, 46);
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.5;
-    transition: all 600ms ease-in-out;
-    
-    
-}
-
-.arrow-right {
-    left: auto;
-    right:0;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.arrow-right:hover,
-.arrow-left:hover {
-    opacity:2;
-    
-}
-
-.item {
-    width: 300px;
-    flex-shrink: 0;
-    opacity: 1;
-    height: 470px;
-    transition: all 600ms ease-in-out; 
-    
-    
-}
- 
-.current-item {
-    opacity: 1;
-    transform: translate(0px, 0px);
-    border-radius: 0px 0px 10px 10px;
-       
-}
-
-.current-item img {
-    border-radius: 10px 10px 0px 0px;
-    width: 300px;
-    height: 220px;
-}
-
-.descrition {
-    position: absolute; 
-    padding: 20px;
-    background-color:rgb(9, 32, 65);
-    height:250px ;
-    margin-top: -6px;
-    color: white;
-     
-}
-
-.descrition > h3 {
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 400;
-    padding-bottom: 5px;
-    
-
-}
-
-.descrition > p {
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: medium;
-    line-height: 1.6em;
-}
-
-.button_align {
-    display: block;
-    text-align: center; 
-}
-
-.button {
-    background-color: white;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 7px;
-    border: solid;
-    border-width: 0.5px;
-    border-color: #092041;
-    
-}
-
-.button a {
-    text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
-    color: #092041;
-    font-size: medium;
-    font-weight: bold;
-}
-
-.button a:hover{
-    color: white;
-    
-}
-
-.button:hover {
-    background-color: #103569;
-  
-}
-/*FIM DA GALERIA */
-
-
-
-
-/*INICIO DO RODAPE */
+/*inicio do footer*/
 footer {
     background-color: rgb(44, 62, 147);
     color: rgb(216, 216, 216);   
@@ -386,10 +153,6 @@ footer {
     font-weight: bold;
     color: rgb(9, 32, 65);
 }
-
-
-/*FIM DO RODAPE */
-
 @media only screen and (max-width: 900px){
     .hamburger{
         display: block;
@@ -462,7 +225,7 @@ footer {
         display: none;
     }
 
-    header > div > img{
+    header > div > a > img {
         width: 80px;
         height: 70px;
         position: absolute;
