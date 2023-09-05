@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalhe Conosco</title>
     <link rel="stylesheet" href="style/trabalheconosco.css">
     <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
 </head>
@@ -20,13 +20,36 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="matriculas.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="#" method="post" autocomplete="on"></form>
-        <h2>Envio de curriculo</h2>
+        <form action="#" method="post" autocomplete="on">
+            <h2>Envio de curriculo</h2>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" autofocus="autofocus">
+                    </li>
+
+                    <li>
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email">
+                    </li>
+                    
+                    <li>
+                        <label for="celular">Celular:</label>
+                        <input type="tel" name="celular">
+                    </li>
+
+                    <li>
+                        <label for="curriculo">Curriculo:<input type="file" name="curriculo" id="curriculo"></label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
     </main>
 
 

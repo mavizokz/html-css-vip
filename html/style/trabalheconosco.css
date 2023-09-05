@@ -16,7 +16,6 @@
 }
 
 body{
-    
     overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
@@ -95,9 +94,47 @@ header > div > a > img  {
 main {
     margin: auto;
     min-height: 320px;
-    font-size: 1.3em;     
+    font-size: 1.3em;         
+}
+
+form{
+    margin: auto;
+    padding-top: 20px; 
+}
+
+ h2 {
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    font-size: 1.7em;    
+}
+
+fieldset {
+    margin: auto;
+    width: 80%;
+    font-size: 0.8em;
+    border: none;
+   
+      
+}
+
+fieldset > ul {
+    font-family: 'Noto Sans', sans-serif;
+    list-style: none; 
+    text-align: center; 
+}
+
+    
+input {
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 300px;
     
 }
+
+
+
+
 
 
 
