@@ -25,31 +25,34 @@
         </nav>
     </header>
     <main>
-        <form action="#" method="post" autocomplete="on">
-            <h2>Envio de curriculo</h2>
-            <fieldset>
-                <ul>
-                    <li>
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" name="nome" autofocus="autofocus">
-                    </li>
-
-                    <li>
-                        <label for="email">E-mail:</label>
-                        <input type="text" name="email">
-                    </li>
-                    
-                    <li>
-                        <label for="celular">Celular:</label>
-                        <input type="tel" name="celular">
-                    </li>
-
-                    <li>
-                        <label for="curriculo">Curriculo:<input type="file" name="curriculo" id="curriculo"></label>
-                    </li>
-                </ul>
-            </fieldset>
-        </form>
+        <div class="login-box box">
+            <form action="#" method="post" autocomplete="on">
+                <h2 class="title-form">Envio de curriculo</h2>
+                <fieldset>
+                    <ul>
+                        <li class="user-box">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" name="nome" autofocus="autofocus">
+                        </li>
+                        <li class="user-box">
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email">
+                        </li>
+            
+                        <li class="user-box">
+                            <label for="celular">Celular:</label>
+                            <input type="tel" name="celular">
+                        </li>
+                        <li>
+                            <label for="curriculo" style="display: none;">Curriculo:<input type="file" name="curriculo" id="curriculo"  accept=".pdf"></label>
+                        </li>
+                        <li>
+                            <input class="submit" type="submit" value="Enviar">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
     </main>
 
 

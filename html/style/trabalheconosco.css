@@ -97,45 +97,98 @@ main {
     font-size: 1.3em;         
 }
 
+.box {
+    width: 480px;
+    margin-top: 40px;
+}
+
+
 form{
     margin: auto;
     padding-top: 20px; 
 }
 
- h2 {
-    font-family:'Yanone Kaffeesatz', sans-serif;
+.title-form {
+    color: black;
     text-align: center;
-    font-size: 1.7em;    
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    font-family:'Yanone Kaffeesatz', sans-serif;
 }
+
+
 
 fieldset {
-    margin: auto;
-    width: 80%;
     font-size: 0.8em;
-    border: none;
-   
-      
+    border: none;     
 }
 
-fieldset > ul {
+.login-box > form > fieldset > ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    list-style: none; 
-    text-align: center; 
 }
 
-    
-input {
-    height: 30px;
-    padding: 5px;
-    margin-bottom: 20px;
-    width: 300px;
+.login-box {
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: auto;
+}
+   
+.login-box .user-box input {   
+    font-size: 1.0em;
+    padding: 10px 10px;
+    color: rgb(39, 38, 38);
+    margin-bottom: 37px;
+    border: 1.2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    width: 99%; 
+    font-weight: 500;
+
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: -35%;
+    left: 10px;
+    padding: 5px 0px;
+    color: rgb(39, 38, 38);
+    pointer-events: none;
+    font-size: 0.90em; 
+    font-weight: 600; 
     
 }
 
+.user-box {
+    margin-top: 1em;
+}
 
+.user-box label::after {
+    content: '*';
+    color: rgb(148, 31, 31);
+}
 
+.submit {
+    padding: 3px;
+    width: 40%;
+    margin-top: 25px;
+    font-size: 1em;
+    font-family:'Noto Sans', sans-serif ;
+    border-radius: 15px;
+}
 
-
+.submit:hover {
+    font-weight: bold;
+    border-width: 2px;
+}
 
 
 /*inicio do footer*/
@@ -214,10 +267,12 @@ footer {
         box-shadow: 0 16px 8px -9px rgba(191, 191, 191, 1);
         transition: 0.5s;
         overflow: hidden;
+        z-index: 1;
     }
 
     .nav-bar.active {
         height: 200px;
+        z-index: 2;
     }
 
     .nav-bar ul {

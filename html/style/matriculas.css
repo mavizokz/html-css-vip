@@ -87,12 +87,13 @@ header > div > a > img {
 
 main {
     margin: 20px;
+    
 }
 
 .container-slider {
     display: flex;
     width: 100%; /*add uma width depois*/
-    min-height: 60vh;
+    min-height: 50vh;
     align-items: center;
     justify-content: center;
     gap: 0rem;
@@ -107,7 +108,7 @@ main {
     justify-content: center;
     width: 100%;
     max-width: 1230px;
-    min-width: 750px; 
+   
 }
   
 .slider {
@@ -115,7 +116,8 @@ main {
     transition: opacity .2s;
     position: absolute;
     width: 90%;
-    border-radius: 10px;  
+    border-radius: 10px; 
+    min-width: 450px; 
 }
   
 .on {
@@ -145,7 +147,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: -60px;
 }
 
 .box {
@@ -193,6 +195,10 @@ article p {
     border-width: 2px;
 }
 
+.button-job a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 /*inicio do formulario*/
 .title-form {
  color: black;
@@ -217,7 +223,6 @@ fieldset {
     box-sizing: border-box;
     box-shadow: 1px 1px 2px rgb(0, 0, 0);
     border-radius: 30px;
-    
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -282,7 +287,6 @@ textarea::placeholder{
 .login-box .user-box input::placeholder{
     color: rgba(187, 187, 187, 0.486);
     font-size: 1.0em;
-    
 
 }
 
@@ -434,7 +438,24 @@ footer {
         
     }
 
-   
+    .container {
+        gap: 7px; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       margin-top: -30px;
+    }
+
+    .container-slider {
+        display: flex;
+        width: 100%; /*add uma width depois*/
+        min-height: 30vh;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+        z-index: 0;
+        
+    }
 }
 
 @media only screen and (max-width: 1002px) {
