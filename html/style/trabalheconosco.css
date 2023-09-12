@@ -162,6 +162,10 @@ fieldset {
     
 }
 
+
+
+
+
 .user-box {
     margin-top: 1em;
 }
@@ -174,7 +178,7 @@ fieldset {
 
 .submit {
     padding: 3px;
-    width: 20%;
+    width: 40%;
     margin-top: 25px;
     font-size: 1em;
     font-family:'Noto Sans', sans-serif ;

@@ -279,7 +279,7 @@ textarea::placeholder{
     margin-top: 1em;
 }
 
-.user-box label::after {
+.impor::after {
     content: '*';
     color: rgb(148, 31, 31);
 }
