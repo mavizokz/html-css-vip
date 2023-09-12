@@ -92,25 +92,17 @@ header > div > a > img  {
 
 
 main {
-    margin: auto;
-    min-height: 320px;
-    font-size: 1.3em;         
+    margin: auto;   
 }
-
-.box {
-    margin-top: 40px;
-}
-
 
 form{
-    margin: auto;
     padding-top: 20px; 
 }
 
-.title-form {
+.title-form  {
     color: black;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2em;
     margin-bottom: 20px;
     font-family:'Yanone Kaffeesatz', sans-serif;
 }
@@ -118,7 +110,6 @@ form{
 
 
 fieldset {
-    font-size: 0.8em;
     border: none;     
 }
 
@@ -129,11 +120,11 @@ fieldset {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.login-box {
+.login-box fieldset {
     padding: 20px;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    margin: auto;
+    font-size: 1.05em;   
 }
    
 .login-box .user-box input {   
@@ -150,7 +141,7 @@ fieldset {
     max-width: 950px;
 }
 
-input{
+.user-box input{
     width: 99%; 
     font-weight: 500;
     max-width: 950px; 
@@ -195,12 +186,54 @@ input{
     border-width: 2px;
 }
 
+/*  INFORMAÇOES DE CONTATO*/
+.container {
+    gap: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -52px;
+}
+
+.box {
+    margin-top: 150px;
+
+}
+
+.box-2 {
+    text-align: center;
+    margin-top: 150px; 
+    padding-top: 20px; 
+}
+
+article > p {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: 1em;
+    font-weight: 500; 
+}
+
+.telefone::before{
+    content: '📞';
+}
+
+.gmail::before {
+    content: '📧';
+}
+
+
+
+
 
 /*inicio do footer*/
 footer {
     background-color: rgb(44, 62, 147);
     color: rgb(216, 216, 216);   
-    margin-top: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .containerFooter {
@@ -209,12 +242,12 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 10px;
+    
 } 
 
 .layout {
-    width: 1156px;
     padding: 25px;
-   
+     
 }
 
 .imgFooter {
@@ -330,6 +363,7 @@ footer {
         bottom:15px;
         
     }
+
 }
 
 
@@ -339,4 +373,27 @@ footer {
     .arrow-right {
         display: none;
     }
+}
+
+@media only screen and (max-width: 1080px){
+    footer {
+        background-color: rgb(44, 62, 147);
+        color: rgb(216, 216, 216);   
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .box {
+        margin-top:70px;
+    
+    }
+    
+    .box-2 {
+        text-align: center;
+        margin-top: 70px; 
+        padding-top: 20px; 
+    }
+
 }
