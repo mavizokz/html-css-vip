@@ -162,10 +162,6 @@ fieldset {
     
 }
 
-
-
-
-
 .user-box {
     margin-top: 1em;
 }
@@ -197,6 +193,7 @@ fieldset {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: -52px;
+    margin-bottom: 50px;
 }
 
 .box {
@@ -234,10 +231,11 @@ article > p {
 footer {
     background-color: rgb(44, 62, 147);
     color: rgb(216, 216, 216);   
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
+    
 }
 
 .containerFooter {
