@@ -98,6 +98,7 @@ main {
     justify-content: center;
     gap: 0rem;
     z-index: 0;
+    margin: 70px 0px;
     
 }
   
@@ -454,6 +455,7 @@ footer {
         justify-content: center;
         gap: 0rem;
         z-index: 0;
+        margin: 20px 0;
         
     }
 }
